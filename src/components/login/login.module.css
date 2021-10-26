@@ -9,6 +9,7 @@
   height: 20rem;
   margin: 0 auto;
   text-align: center;
+  transform: translateY(70%);
 }
 
 .header {
@@ -17,7 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px 0;
+  padding: 10px 0;
   position: relative;
 }
 
@@ -27,15 +28,17 @@
 }
 
 .title {
+  font-size: 2em;
   margin: 0;
 }
 
-.logInOut__btn {
+.log-inout-btn {
   position: absolute;
   right: 10px;
   border-radius: 10px;
   cursor: pointer;
   outline: none;
+  visibility: hidden;
 }
 
 .login {
@@ -43,6 +46,11 @@
   flex-direction: column;
   background-color: makerWhite;
   height: 100%;
+}
+
+.login-title {
+  font-size: 2em;
+  margin: 10px auto;
 }
 
 .social-login-btn {
