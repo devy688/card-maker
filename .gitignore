@@ -12,7 +12,8 @@
 /build
 
 # firebase
-firebase.js
+config.js
+social_media_login.js
 
 # misc
 .DS_Store

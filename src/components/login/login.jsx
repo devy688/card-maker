@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./login.module.css";
 
-const Login = (props) => {
+const Login = ({ googleLogInClick, gibhutLogInClick }) => {
   return (
     <>
       <section className={styles.loginbox}>
@@ -12,8 +12,18 @@ const Login = (props) => {
         </header>
         <div className={styles.login}>
           <h1 className={styles["login-title"]}>Login</h1>
-          <button className={styles["social-login-btn"]}>Google</button>
-          <button className={styles["social-login-btn"]}>Github</button>
+          <button
+            onClick={googleLogInClick}
+            className={styles["social-login-btn"]}
+          >
+            Google
+          </button>
+          <button
+            onClick={gibhutLogInClick}
+            className={styles["social-login-btn"]}
+          >
+            Github
+          </button>
         </div>
         <footer className={styles.footer}>Code your dream</footer>
       </section>
