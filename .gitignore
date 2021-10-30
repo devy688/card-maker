@@ -8,12 +8,14 @@
 # testing
 /coverage
 
+# API Keys
+.env
+
 # production
 /build
 
-# firebase
-config.js
-social_media_login.js
+# mycode
+/mycode
 
 # misc
 .DS_Store

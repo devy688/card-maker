@@ -2,13 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.module.css";
 import App from "./app";
-import SocialMediaLogin from "./firebase/social_media_login";
+import AuthService from "./service/auth_service";
 
-const socialMediaLogin = new SocialMediaLogin();
+const authService = new AuthService();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App socialMediaLogin={socialMediaLogin} />
+    <App authService={authService} />
   </React.StrictMode>,
   document.getElementById("root")
 );

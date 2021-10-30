@@ -1,33 +1,24 @@
 import React from "react";
-import styles from "./login.module.css";
+import Footer from "../footer/footer";
+import Header from "../header/header";
 
-const Login = ({ googleLogInClick, gibhutLogInClick }) => {
+const Login = (props) => {
   return (
-    <>
-      <section className={styles.loginbox}>
-        <header className={styles.header}>
-          <img className={styles.logo} alt="" src="/images/logo.png"></img>
-          <h1 className={styles.title}>Business Card Maker</h1>
-          <button className={styles["log-inout-btn"]}>logout</button>
-        </header>
-        <div className={styles.login}>
-          <h1 className={styles["login-title"]}>Login</h1>
-          <button
-            onClick={googleLogInClick}
-            className={styles["social-login-btn"]}
-          >
-            Google
-          </button>
-          <button
-            onClick={gibhutLogInClick}
-            className={styles["social-login-btn"]}
-          >
-            Github
-          </button>
-        </div>
-        <footer className={styles.footer}>Code your dream</footer>
+    <section>
+      <Header />
+      <section>
+        <h1>Login</h1>
+        <ul>
+          <li>
+            <button>Google</button>
+          </li>
+          <li>
+            <button>Github</button>
+          </li>
+        </ul>
       </section>
-    </>
+      <Footer />
+    </section>
   );
 };
 
