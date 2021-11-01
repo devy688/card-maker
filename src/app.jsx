@@ -1,10 +1,14 @@
-import "./app.css";
+import React from "react";
+import styles from "./app.module.css";
 import Login from "./components/login/login";
 
-import React from "react";
-
 function App({ authService }) {
-  return <Login authService={authService} />;
+  return (
+    // 단순히 스타일링을 위한 태그이므로 div를 사용
+    <div className={styles.app}>
+      <Login authService={authService} />
+    </div>
+  );
 }
 
 export default App;
