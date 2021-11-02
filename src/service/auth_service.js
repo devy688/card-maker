@@ -13,6 +13,7 @@ class AuthService {
   }
 
   onAuthChange(onUserChanged) {
+    // auth state가 변경된다면 인자로 들어간 콜백함수를 호출함
     firebase.auth().onAuthStateChanged((user) => {
       onUserChanged(user);
     });
