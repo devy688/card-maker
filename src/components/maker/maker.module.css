@@ -1,4 +1,4 @@
-@value makerLightGrey from '../../common/colors.css';
+@value makerLightGrey, makerWhite from '../../common/colors.css';
 @value mediaQuery from '../../common/size.css';
 
 .maker {
@@ -7,14 +7,13 @@
   display: flex;
   flex-direction: column;
   overflow: auto;
+  background-color: makerWhite;
 }
 
 .container {
   /* 컨테이너를 가득 채우기 위해 flex: 1 */
   flex: 1;
-  background-color: white;
   display: flex;
-  height: 100%;
 }
 
 @media screen and (max-width: mediaQuery) {
