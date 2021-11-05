@@ -21,9 +21,6 @@ const Card = ({ card }) => {
   );
 };
 
-/* theme별로 명함배경색깔 변경하기 */
-// 컴포넌트에 포함하지 않아도 되는 함수이므로
-// 여기에 정의
 function getStyles(theme) {
   switch (theme) {
     case "dark":
