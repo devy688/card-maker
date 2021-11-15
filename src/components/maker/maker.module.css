@@ -4,9 +4,9 @@
 .maker {
   width: 100%;
   height: 100%;
+  max-width: 80rem;
   display: flex;
   flex-direction: column;
-  overflow: auto;
   background-color: makerWhite;
 }
 
@@ -14,6 +14,7 @@
   /* 컨테이너를 가득 채우기 위해 flex: 1 */
   flex: 1;
   display: flex;
+  min-height: 0;
 }
 
 @media screen and (max-width: mediaQuery) {
