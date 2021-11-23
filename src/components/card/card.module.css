@@ -27,11 +27,9 @@
 .avatar {
   width: 10em;
   height: 10em;
-  /* padding을 이용해서 사이즈 조절 */
   padding: 1em;
   margin-left: 0.5em;
   margin-right: 1em;
-  /* 네모난 사진을 동그랗게 */
   border-radius: 50%;
 }
 
