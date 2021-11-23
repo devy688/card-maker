@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/devy688.github.io/card-maker/static/css/main.6f187bd0.chunk.css",
+    "main.js": "/devy688.github.io/card-maker/static/js/main.43eceecd.chunk.js",
+    "main.js.map": "/devy688.github.io/card-maker/static/js/main.43eceecd.chunk.js.map",
+    "runtime-main.js": "/devy688.github.io/card-maker/static/js/runtime-main.0f17caab.js",
+    "runtime-main.js.map": "/devy688.github.io/card-maker/static/js/runtime-main.0f17caab.js.map",
+    "static/js/2.e1bcb5ac.chunk.js": "/devy688.github.io/card-maker/static/js/2.e1bcb5ac.chunk.js",
+    "static/js/2.e1bcb5ac.chunk.js.map": "/devy688.github.io/card-maker/static/js/2.e1bcb5ac.chunk.js.map",
+    "index.html": "/devy688.github.io/card-maker/index.html",
+    "static/css/main.6f187bd0.chunk.css.map": "/devy688.github.io/card-maker/static/css/main.6f187bd0.chunk.css.map",
+    "static/js/2.e1bcb5ac.chunk.js.LICENSE.txt": "/devy688.github.io/card-maker/static/js/2.e1bcb5ac.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f17caab.js",
+    "static/js/2.e1bcb5ac.chunk.js",
+    "static/css/main.6f187bd0.chunk.css",
+    "static/js/main.43eceecd.chunk.js"
+  ]
+}
