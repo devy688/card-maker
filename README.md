@@ -32,11 +32,9 @@ Demo Link => not deployed yet...
 
 ## 📝 What I Learned
 
-```javascript
 - How to use React Router
 - Experience firebase & cloudinary
 - Define frequently used components in the top-level file (FileInput component)
-```
 
 <br>
 
