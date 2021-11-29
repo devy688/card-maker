@@ -1,0 +1,94 @@
+@value makerGrey, makerBlack, makerWhite, makerSkyBlue from '../../common/colors.css';
+
+.card {
+  background-color: transparent;
+  width: 30em;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 0.5em;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5em;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+
+.card:hover .inner {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  backface-visibility: visible;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: makerWhite;
+  border: 15px solid makerSkyBlue;
+  color: makerBlack;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+
+.description {
+  font-size: 1.2em;
+  margin-top: 0.8em;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  background-color: makerSkyBlue;
+  color: makerGrey;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  transform: rotateY(180deg);
+  transition: transform 500ms ease-in-out;
+  z-index: 1;
+}
+
+.slider {
+  width: 200%;
+  height: 100%;
+  display: flex;
+}
+
+.signIn {
+  flex: 1;
+  transition: transform 500ms ease-in-out;
+}
+
+.signUp {
+  flex: 1;
+  transition: transform 500ms ease-in-out;
+}
+
+.hide {
+  display: none;
+}

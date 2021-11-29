@@ -1,8 +1,7 @@
 import { firebaseAuth, googleProvider, githubProvider } from "./firebase.js";
 
-// 로그인, 로그아웃 등 사용자 authentication 확인하는 클래스
 class AuthService {
-  login(providerName) {
+  socialLogin(providerName) {
     const authProvider = this.getProvider(providerName);
     return firebaseAuth.signInWithPopup(authProvider);
   }
@@ -12,7 +11,6 @@ class AuthService {
   }
 
   onAuthChange(onUserChanged) {
-    // auth state가 변경된다면 인자로 들어간 콜백함수를 호출함
     firebaseAuth.onAuthStateChanged((user) => {
       onUserChanged(user);
     });

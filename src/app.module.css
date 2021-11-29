@@ -1,4 +1,4 @@
-@value makerGrey from './common/colors.css';
+@value makerLightGray from './common/colors.css';
 
 .app {
   width: 100%;
@@ -6,5 +6,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: makerGrey;
+  background-color: makerLightGray;
 }

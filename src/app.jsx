@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import styles from "./app.module.css";
-import Login from "./components/login/login";
+import Home from "./components/home/home";
 import Maker from "./components/maker/maker";
 
 function App({ FileInput, authService, cardRepository }) {
   return (
     <div className={styles.app}>
-      <BrowserRouter>
+      <BrowserRouter basename="/card-maker">
         <Switch>
           <Route exact path="/">
-            <Login authService={authService} />
+            <Home authService={authService} cardRepository={cardRepository} />
           </Route>
           <Route path="/maker">
             <Maker

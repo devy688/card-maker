@@ -1,19 +1,37 @@
-@value makerBlack: black;
-
 @value makerWhite: white;
 
-@value makerLightGrey: #e8e7e6;
+@value makerBeige: #fff3e8;
+
+@value makerWheat: wheat;
+
+@value makerYellow: #fad390;
 
 @value makerLightPink: #ffeae8;
 
-@value makerGrey: #626262;
+@value makerBabyPink: #ffcccc;
+
+@value makerPink: pink;
 
 @value makerGreen: #385461;
 
-@value makerPink: pink;
+@value makerSkyBlue: #afebe4;
+
+@value makerDarkSkyBlue: #82ccdd;
+
+@value makerDustyBlue: #65a3c5;
+
+@value makerLightPurple: #e4dcec;
+
+@value makerPurple: #bbb7e9;
+
+@value makerLightGrey: #e8e7e6;
+
+@value makerLightGray: #b2bec3;
+
+@value makerGrey: #626262;
+
+@value makerBlack: black;
 
 @value makerShadow: rgba(217, 217, 217, 1);
 
 @value makerColorful: linear-gradient(166deg, rgba(237, 193, 211, 1) 0%,rgba(212, 149, 161, 1) 60%, rgba(162, 63, 63, 1) 100%, rgba(127, 188, 242, 1) 100%);
-
-@value makerWheat: wheat;
