@@ -21,7 +21,7 @@ const Home = ({ authService }) => {
 
   const goToMaker = (userId) => {
     history.push({
-      pathname: "/maker",
+      pathname: "/card-maker/maker",
       state: {
         id: userId,
       },

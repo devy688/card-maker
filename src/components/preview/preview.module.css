@@ -6,19 +6,21 @@
 }
 
 .title {
+  color: makerGreen;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
   width: 100%;
   text-align: center;
+  margin-top: 1em;
   margin-bottom: 1em;
-  color: makerGreen;
 }
 
-.cards {
-  width: 100%;
-  height: 100%;
-  padding: 0.5em 2em;
+.list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 3em;
+  margin: 0;
 }
 
 .preview::-webkit-scrollbar {

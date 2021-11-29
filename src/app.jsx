@@ -7,12 +7,12 @@ import Maker from "./components/maker/maker";
 function App({ FileInput, authService, cardRepository }) {
   return (
     <div className={styles.app}>
-      <BrowserRouter basename="/card-maker">
+      <BrowserRouter>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/card-maker">
             <Home authService={authService} cardRepository={cardRepository} />
           </Route>
-          <Route path="/maker">
+          <Route path="/card-maker/maker">
             <Maker
               FileInput={FileInput}
               authService={authService}

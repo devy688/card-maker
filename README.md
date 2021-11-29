@@ -2,7 +2,7 @@
 
 _ReactJS Practice_
 
-Demo Link => not deployed yet...
+Demo Link => https://devy688.github.io/card-maker
 
 <br>
 
@@ -24,7 +24,13 @@ Demo Link => not deployed yet...
 
 ## 💻 About Project
 
-![card-maker](https://user-images.githubusercontent.com/91401462/143009893-5e670673-bb80-460d-9420-084baf2236e0.gif)
+### 1. Create account & Login
+
+![createaccount](https://user-images.githubusercontent.com/91401462/143909203-d70767ae-4765-4336-889b-69880a4abafb.gif)
+
+### 2. Login in with Social Media
+
+![socialLogin](https://user-images.githubusercontent.com/91401462/143910595-181a9fb0-226f-46b9-bba5-40676adc1947.gif)
 
 <br>
 
@@ -38,6 +44,6 @@ Demo Link => not deployed yet...
 
 ## 👩‍💻 What I want to update
 
-- [ ] Update the UI
+- [x] Update the UI - ( Nov 29, 2021 )
 - [ ] Upload image with drag & drop
 - [ ] Deploying with netlify
