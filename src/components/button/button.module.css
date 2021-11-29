@@ -1,13 +1,15 @@
-@value makerLightGrey, makerWhite, makerGreen from '../../common/colors.css';
+@value makerLightGray, makerGrey from '../../common/colors.css';
 
 .button {
-  background-color: makerGreen;
-  color: makerWhite;
-  font-weight: bold;
+  background-color: makerLightGray;
+  border: none;
+  color: makerGrey;
   cursor: pointer;
-  padding: 0.5em;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
   flex: 1 1 50%;
-  font-size: 0.8rem;
+  padding: 0.5em;
 }
 
 .button:hover {
