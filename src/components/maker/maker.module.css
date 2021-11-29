@@ -1,19 +1,51 @@
-@value makerLightGrey, makerWhite from '../../common/colors.css';
+@value makerWhite,  makerGrey, makerDustyBlue from '../../common/colors.css';
 @value mediaQuery from '../../common/size.css';
 
 .maker {
-  width: 100%;
+  width: 90%;
   height: 100%;
-  max-width: 80rem;
+  max-width: 75rem;
+  background-color: makerWhite;
+  border: 25px solid makerDustyBlue;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+.title {
   background-color: makerWhite;
+  color: makerGrey;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2em;
+  margin: 1em auto;
+  margin-top: 1em;
+}
+
+.logout {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  color: makerBlack;
+  cursor: pointer;
+  outline: 0;
+  position: absolute;
+  right: 2.5em;
+  top: 2.5em;
 }
 
 .container {
   flex: 1;
+  background-color: makerWhite;
   display: flex;
   min-height: 0;
+  margin-bottom: 1.5em;
 }
 
 @media screen and (max-width: mediaQuery) {

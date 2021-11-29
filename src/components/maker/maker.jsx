@@ -1,8 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import Editor from "../editor/editor";
-import Footer from "../footer/footer";
-import Header from "../header/header";
 import Preview from "../preview/preview";
 import styles from "./maker.module.css";
 
@@ -17,22 +15,28 @@ const Maker = ({ FileInput, authService, cardRepository }) => {
     authService.logout();
   }, [authService]);
 
+  const getCardsData = useCallback(() => {
+    const stopSync = cardRepository.syncCards(userId, (data) => {
+      setCards(data);
+    });
+    return stopSync;
+  }, [cardRepository, userId]);
+
   useEffect(() => {
     if (!userId) {
       return;
     }
-    const stopSync = cardRepository.syncCards(userId, (cards) => {
-      setCards(cards);
-    });
+    const stopSync = getCardsData();
+
     return () => stopSync();
-  }, [cardRepository, userId]);
+  }, [getCardsData, userId]);
 
   useEffect(() => {
     authService.onAuthChange((user) => {
       if (user) {
         setUserId(user.uid);
       } else {
-        history.push("/");
+        history.push("/card-maker");
       }
     });
   }, [authService, history]);
@@ -46,18 +50,28 @@ const Maker = ({ FileInput, authService, cardRepository }) => {
     cardRepository.saveCard(userId, card);
   };
 
-  const deleteCard = (card) => {
-    setCards((cards) => {
-      const updated = { ...cards };
-      delete updated[card.id];
-      return updated;
-    });
-    cardRepository.removeCard(userId, card);
-  };
+  const deleteCard = useCallback(
+    (card) => {
+      setCards((cards) => {
+        const deleted = { ...cards };
+        delete deleted[card.id];
+        return deleted;
+      });
+      cardRepository.removeCard(userId, card);
+    },
+    [cardRepository, userId]
+  );
 
   return (
     <section className={styles.maker}>
-      <Header onLogout={onLogout} />
+      <header className={styles.header}>
+        {onLogout && (
+          <span className={styles.logout} onClick={onLogout}>
+            Logout
+          </span>
+        )}
+        <h1 className={styles.title}>Business Card Maker</h1>
+      </header>
       <div className={styles.container}>
         <Editor
           FileInput={FileInput}
@@ -68,7 +82,6 @@ const Maker = ({ FileInput, authService, cardRepository }) => {
         />
         <Preview cards={cards} />
       </div>
-      <Footer />
     </section>
   );
 };
