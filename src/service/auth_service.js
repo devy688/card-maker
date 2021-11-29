@@ -1,6 +1,14 @@
 import { firebaseAuth, googleProvider, githubProvider } from "./firebase.js";
 
 class AuthService {
+  signUp(email, password) {
+    return firebaseAuth.createUserWithEmailAndPassword(email, password);
+  }
+
+  signIn(email, password) {
+    return firebaseAuth.signInWithEmailAndPassword(email, password);
+  }
+
   socialLogin(providerName) {
     const authProvider = this.getProvider(providerName);
     return firebaseAuth.signInWithPopup(authProvider);

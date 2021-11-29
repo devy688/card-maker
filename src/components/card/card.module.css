@@ -1,40 +1,54 @@
-@value makerShadow, makerBlack, makerWhite, makerColorful, makerWheat from "../../common/colors.css";
+@value makerGrey, makerYellow, makerBabyPink, makerDarkSkyBlue, makerPurple, makerLightGrey, makerWhite, makerBlack from '../../common/colors.css';
 
 .card {
   display: flex;
   align-items: center;
   width: 100%;
-  border-radius: 1em;
-  margin-bottom: 0.5em;
-  padding: 0.2em 0;
-  box-shadow: 6px 6px 8px 0px makerShadow;
-  max-width: 30rem;
+  border-radius: 0.8em;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  max-width: 25rem;
+  position: relative;
 }
 
-.card.dark {
-  color: makerWhite;
-  background-color: makerBlack;
+.card.grey {
+  background-color: makerGrey;
+  color: white;
 }
 
-.card.light {
-  background-color: makerWhite;
+.card.lightGrey {
+  background-color: makerLightGrey;
 }
 
-.card.colorful {
-  background: makerColorful;
+.card.yellow {
+  background-color: makerYellow;
+}
+
+.card.pink {
+  background-color: makerBabyPink;
+}
+
+.card.skyblue {
+  background-color: makerDarkSkyBlue;
+}
+
+.card.purple {
+  background-color: makerPurple;
 }
 
 .avatar {
-  width: 10em;
-  height: 10em;
-  padding: 1em;
-  margin-left: 0.5em;
-  margin-right: 1em;
+  width: 8em;
+  height: 8em;
   border-radius: 50%;
 }
 
 .info {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  padding-left: 1.5em;
+  margin-top: 0.5em;
 }
 
 .name,
@@ -43,23 +57,43 @@
 .email,
 .message {
   margin: 0;
-  margin-bottom: 0.2em;
-  font-size: 0.8rem;
+  font-size: 0.8em;
+  margin-bottom: 0.6em;
 }
 
 .name {
-  font-size: 1.2rem;
+  margin-bottom: 0.4em;
+  font-size: 1.2em;
 }
 
-.company {
-  margin-bottom: 1em;
-}
-
-.company::after {
-  content: "";
-  display: block;
+.line {
   width: 90%;
-  height: 2px;
-  background-color: makerWheat;
-  transform: translateY(0.5em);
+  height: 0.5px;
+  background-color: makerBlack;
+  margin: 0;
+  margin-bottom: 0.7em;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 0.3em;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.cover:hover {
+  background-color: makerGrey;
+  color: makerWhite;
+  cursor: pointer;
+  opacity: 0.8;
 }
