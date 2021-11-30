@@ -26,11 +26,15 @@ Demo Link => https://devy688.github.io/card-maker
 
 ### 1. Create account & Login
 
-![createaccount](https://user-images.githubusercontent.com/91401462/143909203-d70767ae-4765-4336-889b-69880a4abafb.gif)
+![createLogin](https://user-images.githubusercontent.com/91401462/144064810-323c4bb2-2317-44db-bb5c-038b74e8548b.gif)
 
 ### 2. Login in with Social Media
 
 ![socialLogin](https://user-images.githubusercontent.com/91401462/143910595-181a9fb0-226f-46b9-bba5-40676adc1947.gif)
+
+### 3. Make Card, Update In Realtime, Download Card
+
+![cardCRUD](https://user-images.githubusercontent.com/91401462/144066409-21cb8b7e-be21-4690-83f2-c24a86c95438.gif)
 
 <br>
 
